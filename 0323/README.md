@@ -31,7 +31,7 @@ g++ newTsest.cpp -o newTsest.exe
 ```
 
 ```
-
+.\newTsest.exe
 ```
 
 
