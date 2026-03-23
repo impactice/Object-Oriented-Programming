@@ -26,7 +26,13 @@ int main(){
 ```
 
 
+```
+g++ newTsest.cpp -o newTsest.exe
+```
 
+```
+
+```
 
 
 
