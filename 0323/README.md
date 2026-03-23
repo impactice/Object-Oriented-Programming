@@ -25,3 +25,15 @@ int main(){
 }
 ```
 
+
+
+
+
+
+```
+g++ stringTest.cpp -o stringTest.exe
+```
+
+```
+.\stringTest.exe
+```
