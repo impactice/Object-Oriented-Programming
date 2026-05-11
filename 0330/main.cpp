@@ -1,4 +1,5 @@
 #include "Circle.h"
+#include "Person.h"
 #include <iostream>
 #include <windows.h>
 using namespace std;
@@ -34,11 +35,24 @@ void ReadRadius(Circle &c) {
 int main() {
     SetConsoleCP(CP_UTF8);        // 입력도 UTF-8
     SetConsoleOutputCP(CP_UTF8);  // 출력 UTF-8
+
+    Person father(1,"kitae");
+    Person son(father);
+    father.show();
+    son.show();
+
+    //야키 복사의 문제 아들뿐만 아니라 아빠도 바뀜
+    son.changeName("Ton");
+    cout<<"아들의 이름 바꿈"<<endl;
+    father.show();
+    son.show();
+
     //Circle c;
     //c = getCircle();
+    /*
     Circle donut;
     ReadRadius(donut);
-    cout << "donut의 면적 = "<<donut.getArea() << endl;
+    cout << "donut의 면적 = "<<donut.getArea() << endl;*/
     //cout<<c.getArea()<<endl;
     
     //Circle waffle(30);
