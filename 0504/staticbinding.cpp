@@ -8,6 +8,7 @@ public:
 
 class Derived : public Base {
 public:
+    //void f() override { cout << "Derived::f() called" << endl; } //오버라이드 근데 에러를 걷들인..
     void f() { cout << "Derived::f() called" << endl; }  // 함수 재정의
 };
 
